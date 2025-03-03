@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Demo</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="https://via.placeholder.com/50" alt="Logo">
+                <span>Demo</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active" aria-current="page">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-book"></i>
+                    <span>My Courses</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-video"></i>
+                    <span>Live Classes</span>
+                    <span class="live-badge">LIVE</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-tasks"></i>
+                    <span>Assignments</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Progress</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Schedule</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+            <div class="user-info">
+                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User  Profile Picture">
+                <div>
+                    <h4>John Doe</h4>
+                    <p>Class 12 - Science</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="dashboard-header">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for courses, assignments..." aria-label="Search">
+                </div>
+                <div class="header-actions">
+                    <button class="notification-btn" aria-label="Notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+                    <button class="profile-btn" aria-label="Profile settings">
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Profile Picture">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <section class="welcome-section">
+                    <div class="welcome-text">
+                        <h1>Welcome back, John! 👋</h1>
+                        <p>Ready to continue your learning journey?</p>
+                    </div>
+                </section>
+                    
+                <div class="grid-section">
+                    <!-- Attendance Overview -->
+                    <div class="attendance-card">
+                        <div class="attendance-header">
+                            <h3>Attendance Overview</h3>
+                            <span class="month">March 2024</span>
+                        </div>
+                        <div class="attendance-stats">
+                            <div class="attendance-stat">
+                                <span class="stat-number">85%</span>
+                                <span class="stat-label">Present</span>
+                            </div>
+                            <div class="attendance-stat">
+                                <span class="stat-number">12%</span>
+                                <span class="stat-label">Absent</span>
+                            </div>
+                            <div class="attendance-stat">
+                                <span class="stat-number">3%</span>
+                                <span class="stat-label">Late</span>
+                            </div>
+                        </div>
+                        <div class="attendance-progress">
+                            <div class="progress-bar" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                
+                    <!-- Notifications Panel -->
+                    <div class="notifications-panel">
+                        <div class="notifications-header">
+                            <h3>Notifications</h3>
+                        </div>
+                        <div class="notification-list">
+                            <div class="notification-item unread">
+                                <div class="notification-icon">
+                                    <i class="fas fa-book"></i>
+                                </div>
+                                <div class="notification-content">
+                                    <h4>New Assignment Posted</h4>
+                                    <p>Mathematics Chapter 5 homework due tomorrow</p>
+                                    <span class="notification-time">2h ago</span>
+                                </div>
+                            </div>
+                            <div class="notification-item">
+                                <div class="notification-icon">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <div class="notification-content">
+                                    <h4>Live Class Starting Soon</h4>
+                                    <p>Physics class starts in 15 minutes</p>
+                                    <span class="notification-time">15m ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="upcoming-classes">
+                    <div class="section-header">
+                        <h2>Upcoming Live Classes</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="class-list">
+                        <div class="class-item">
+                            <div class="class-info">
+                                <div class="class-subject-icon">
+                                    <i class="fas fa-atom"></i>
+                                </div>
+                                <div class="class-details">
+                                    <h4>Wave Optics</h4>
+                                    <span class="class-time">
+                                        <i class="far fa-clock"></i>
+                                        Live Now
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="join-class-btn">
+                                <i class="fas fa-video"></i>
+                                Join Now
+                            </button>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-info">
+                                <div class="class-subject-icon chemistry">
+                                    <i class="fas fa-flask"></i>
+                                </div>
+                                <div class="class-details">
+                                    <h4>Organic Chemistry</h4>
+                                    <span class="class-time">
+                                        <i class="far fa-clock"></i>
+                                        Today, 2:00 PM
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="join-class-btn secondary">
+                                <i class="fas fa-bell"></i>
+                                Remind Me
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- <div class="grid-section">
+                    <section class="progress-section">
+                        <h2>Your Progress</h2>
+                        <div class="progress-cards">
+                            <div class="progress-card">
+                                <div class="progress-info">
+                                    <h4>Physics</h4>
+                                    <span>85% Complete</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-card">
+                                <div class="progress-info">
+                                    <h4>Chemistry</h4>
+                                    <span>70% Complete</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-card">
+                                <div class="progress-info">
+                                    <h4>Mathematics</h4>
+                                    <span>90% Complete</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section> -->
+
+                    <!-- <section class="assignments-section">
+                        <h2>Pending Assignments</h2>
+                        <div class="assignment-list">
+                            <div class="assignment-item">
+                                <div class="assignment-info">
+                                    <h4>Physics Assignment #12</h4>
+                                    <p>Due: Tomorrow, 11:59 PM</p>
+                                </div>
+                                <button class="submit-btn">Submit</button>
+                            </div>
+                            <div class="assignment-item">
+                                <div class="assignment-info">
+                                    <h4>Chemistry Lab Report</h4>
+                                    <p>Due: 2 days left</p>
+                                </div>
+                                <button class="submit-btn">Submit</button>
+                            </div>
+                        </div>
+                    </section>
+                </div> -->
+
+                <!-- <section class="activity-section">
+                    <h2>Recent Activity</h2>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon completed">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="activity-info">
+                                <h4>Completed Physics Quiz</h4>
+                                <p>Score: 92/100</p>
+                                <span class="activity-time">2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon attended">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <div class="activity-info">
+                                <h4>Attended Chemistry Live Class</h4>
+                                <p>Duration: 1 hour</p>
+                                <span class="activity-time">Yesterday</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon submitted">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="activity-info">
+                                <h4>Submitted Mathematics Assignment</h4>
+                                <p>Grade: Pending</p>
+                                <span class="activity-time">2 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div> -->
+
+    <script>
+        // Add active class to current nav item
+        const navItems = document.querySelectorAll('.nav-item');
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navItems.forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+            });
+        });
+
+        // Handle notification button click
+        document.querySelector('.notification-btn').addEventListener('click', () => {
+            alert('Notifications feature coming soon!');
+        });
+
+        // Handle profile button click
+        document.querySelector('.profile-btn').addEventListener('click', () => {
+            alert('Profile settings coming soon!');
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.dashboard-header');
+            header.classList.toggle('scrolled', window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>

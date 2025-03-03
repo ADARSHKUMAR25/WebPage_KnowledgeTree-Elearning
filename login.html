@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Login Page</title>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="logo-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/295/295128.png" alt="Login Logo" class="login-logo">
+        </div>
+        <h2>Welcome Back!</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <div class="input-with-icon">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <div class="input-with-icon">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+            </div>
+            <button type="submit">Log In</button>
+            <p id="error-message" class="error-message"></p>
+        </form>
+        <div class="links">
+            <a href="register.html" id="register-link">Create New Account</a>
+            <a href="forgot-password.html" id="forgot-password-link">Forgot Password?</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
